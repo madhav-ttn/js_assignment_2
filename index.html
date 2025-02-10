@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_Assignment_2</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Calculator</h1>
+            <div>
+                <h4>Insert Values:</h4>
+                <button id="insert">Insert</button>
+                <button id="add">Add</button>
+                <button id="subtract">Subtract</button>
+                <button id="multiply">Multiply</button>
+                <button id="divide">Divide</button>
+            </div>
+        </div>
+            
+        <div>
+            <h1>Temperature Converter </h1>
+            <div>
+                <h4>Insert Temperature:</h4>
+                <button id="insertTemp">Insert</button>
+                <button id="toFar">Fahrenheit</button>
+                <button id="toKelvin">Kelvin</button>
+                <button id="display">display</button>
+            </div>
+        </div>
+
+        <h1>Predicting the output</h1>
+        <div>
+            <img src="snippet.png" alt="sample_image" height="300" width="500">
+            <div>
+                 <h4>
+                    Q:Predict the output of the given snippet.
+                 </h4>
+                 <span>A:5 10 undefined Reference_Error</span>
+                 <h4>
+                    Q:Explain how hoisting affects the execution 
+                    of console.log(z) in second().                    
+                 </h4>
+                 <span>A:Only Declaration can be hoisted,Assignment can not be hoisted</span>
+                 <h4>
+                    Q:Explain the scope chain for console.log(y) in 
+                    second().                    
+                 </h4>
+                 <span>First y will be checked in local scope (where it has been called or accessed) and it's not found in 
+                    function named second and then it will be checked in outer scope and now it will be checked in function named first
+                    so variable is detected with name y and value is printed;
+                    if function first does not hold the var y , then it will checked globally
+                 </span>
+                 <h4>
+                    Q:What happens when console.log(y) 
+                    is executed outside first() (Line 4)? Why?                    
+                 </h4>
+                 <span>It will give reference error as var can be either function scoped or global scoped
+                    In this case var y=10 is initialized in function first so it will have it's scope to that function only.
+                    It can not be accessed outside the function first;
+                 </span>
+                 <h4>
+                    Q:Modify the code to use let instead of var and 
+                    observe any differences.                    
+                 </h4>
+                 <span><img src="image.png" alt="ans_snippet"></span>           
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
