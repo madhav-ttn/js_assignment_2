@@ -12,6 +12,7 @@ let calObj={
     check:function(n){
         if(n===null || n===undefined)return false;
         if(n.length===0)return false;
+        n=n.trim();
         let parsed = parseFloat(n);
         if (!isNaN(n) && parsed.toString() === n ) {
             return true;
